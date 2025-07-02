@@ -4,12 +4,12 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.seitenbau.govdata</groupId>
   <artifactId>keycloak-event-listeners</artifactId>
-  <version>7.1.0</version>
+  <version>7.6.0</version>
   <description>Keycloak Event Listeners</description>
   <packaging>jar</packaging>
 
   <properties>
-    <keycloak.version>25.0.6</keycloak.version>
+    <keycloak.version>26.2.5</keycloak.version>
     <jackson.version>2.17.2</jackson.version>
     <mockito.version>5.8.0</mockito.version>
     <!-- byte-buddy is required by mockito
@@ -173,7 +173,7 @@
         <plugin>
           <groupId>org.owasp</groupId>
           <artifactId>dependency-check-maven</artifactId>
-          <version>10.0.3</version>
+          <version>12.1.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -228,6 +228,8 @@
             </executions>
             <configuration>
               <nvdApiKey></nvdApiKey>
+              <nvdMaxRetryCount>50</nvdMaxRetryCount>
+              <nvdApiDelay>8000</nvdApiDelay>
               <formats>HTML,XML</formats>
               <suppressionFiles>
                 <suppressionFile>${owasp.suppressions}</suppressionFile>
