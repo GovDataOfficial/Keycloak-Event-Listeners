@@ -1,5 +1,9 @@
 # Changelog
 
+## 7.9.0 2025-12-15
+
+* Update keycloak version to 26.4.6
+
 ## 7.6.0 2025-07-01
 
 * Update keycloak version to 26.2.5

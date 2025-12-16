@@ -4,12 +4,12 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.seitenbau.govdata</groupId>
   <artifactId>keycloak-event-listeners</artifactId>
-  <version>7.6.0</version>
+  <version>7.9.0</version>
   <description>Keycloak Event Listeners</description>
   <packaging>jar</packaging>
 
   <properties>
-    <keycloak.version>26.2.5</keycloak.version>
+    <keycloak.version>26.4.6</keycloak.version>
     <jackson.version>2.17.2</jackson.version>
     <mockito.version>5.8.0</mockito.version>
     <!-- byte-buddy is required by mockito
@@ -230,6 +230,7 @@
               <nvdApiKey></nvdApiKey>
               <nvdMaxRetryCount>50</nvdMaxRetryCount>
               <nvdApiDelay>8000</nvdApiDelay>
+              <ossindexAnalyzerEnabled>false</ossindexAnalyzerEnabled>
               <formats>HTML,XML</formats>
               <suppressionFiles>
                 <suppressionFile>${owasp.suppressions}</suppressionFile>
