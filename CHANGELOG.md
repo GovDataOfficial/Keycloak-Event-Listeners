@@ -1,5 +1,9 @@
 # Changelog
 
+## 7.12.4 2026-03-25
+
+* Updates com.fasterxml.jackson.core to latest patch version
+
 ## 7.12.3 2026-03-20
 
 * Update keycloak version to 26.5.6
